@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KIRAN — Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">MP</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-burger" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>KIRAN TEJA</h1>
+          <p class="tagline">Full Stack Student • Building thoughtful web experiences</p>
+          <p class="lead">Creating simple, maintainable websites and web apps using modern HTML, CSS and vanilla JS.</p>
+          <p class="ctas">
+            <a class="btn primary" href="#projects">View Work</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="images/hero-sample.png" alt="decorative hero image">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="small-underline"></p>
+        <div class="about-grid">
+          <div class="about-left">
+            <img src="images/pic1.jpeg" alt="profile" class="profile-img">
+          </div>
+          <div class="about-right">
+            <h3>Hello! I'm Kiran Teja</h3>
+            <p>I am a student focused on Computer Science & AI. I build responsive websites, small web apps, and enjoy
+              learning new front-end patterns. I prioritize readable code and accessible UI.</p>
+            <p class="skills">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React (learning)</span>
+              <span class="tag">Python</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="small-underline"></p>
+        <div class="projects-grid">
+          <article class="card">
+            <img src="images/pic2.jpeg" alt="project 1">
+            <div class="card-body">
+              <h3>Personal Website</h3>
+              <p>Responsive portfolio built with semantic HTML, CSS Grid and custom properties.</p>
+              <p class="tech">HTML • CSS • JavaScript</p>
+              <p class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/pic3.jpeg" alt="project 2">
+            <div class="card-body">
+              <h3>Todo App</h3>
+              <p>Vanilla JS todo app with localStorage persistence and filtering.</p>
+              <p class="tech">JavaScript • DOM • LocalStorage</p>
+              <p class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/pic4.jpeg" alt="project 3">
+            <div class="card-body">
+              <h3>Mini Blog</h3>
+              <p>Static blog prototype using markdown-to-html workflow and simple styling.</p>
+              <p class="tech">HTML • CSS • Build tools</p>
+              <p class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p class="small-underline"></p>
+          <p>If you'd like to collaborate, send a message — I'll reply within a few days.</p>
+          <ul class="contact-links">
+            <li>Email: <a href="mailto:mithil.p@example.com">KIRANTEJA8911@gmail.com</a></li>
+            <li>GitHub: <a href="#" target="_blank" rel="noopener">github.com/tejachimatas145-star</a></li>
+            <li>LinkedIn: <a href="#" target="_blank" rel="noopener">linkedin.com/in/Kiran Teja</a></li>
+          </ul>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name" required>
+            <small class="hint">Enter your full name</small>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email" required>
+            <small class="hint">We'll use this to reply</small>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send Message</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>©️ 2025 Kiran Teja — Built with ❤️ • <a href="#" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
